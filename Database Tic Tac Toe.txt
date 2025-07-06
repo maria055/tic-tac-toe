@@ -1,0 +1,39 @@
+//Database creation
+create database tictactoe;
+use database tictactoe;
+
+//Table creation
+
+create table users(
+id int,
+name varchar(100),
+email varchar(20),
+password varchar(100)
+);
+
+//Data insertion
+
+insert into users(id,name,email, phoneNumber,password)
+values(2,'Kahim','rahim@gmail.com',+880123456710,'karim123');
+values(3,'Runa','runa@gmail.com',+880123456711,'runa123');
+values(4,'Fahim','Fahim@gmail.com',+880123456713,'Fahim123');
+values(5,'Shafi','Shafi@gmail.com',+8801234567145,'shafi123');
+
+//Find user by email and password 
+
+select*from users
+where email='userEmail' and password='userpassword'
+
+//Find all users
+select*from users;
+
+//User updation
+uodate users
+set name='Rahim Mia'
+where email='rahim@gmail.com'
+
+//User Deletion
+Delete users
+where email='rahim@gmail.com'
+
+
